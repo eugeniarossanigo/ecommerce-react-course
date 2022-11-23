@@ -7,12 +7,12 @@ export default function NavBar() {
                 <div className="flex justify-around items-center py-4">
                     <div className="flex items-end">
                         <img className="w-20 h-20" src="./logo-v-w.png" alt="logo"></img>
-                        <h1 className="text-white-mh text-2xl font-semibold px-2">SHOP</h1>
+                        <h1 className="text-white-mh text-3xl font-semibold px-2">SHOP</h1>
                     </div>
-                    <div className="text-white-mh font-semibold gap-x-2.5 self-end">
-                        <a className="px-2">INICIO</a>
-                        <a className="px-2">PRODUCTOS</a>
-                        <a className="px-2">CONTACTO</a>
+                    <div className="text-white-mh font-medium gap-x-2.5 self-end">
+                        <a className="p-3 hover:bg-dark-mh rounded-xl">INICIO</a>
+                        <a className="p-3 hover:bg-dark-mh rounded-xl">PRODUCTOS</a>
+                        <a className="p-3 hover:bg-dark-mh rounded-xl">CONTACTO</a>
                     </div>
                     <CartWidget />
                 </div>
