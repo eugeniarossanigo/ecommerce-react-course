@@ -13,6 +13,7 @@ export default function ItemDetail({item}) {
                         <h5 className="text-base">Stock: {item.stock}</h5>
                         <p className="text-xl font-extrabold">${item.price}</p>
                         <ItemCount stock={item.stock} initial={0}/>
+                        <button className="btn border-green-mh border-2 rounded-lg px-4 py-2">Agregar</button>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
-import { products } from "../Mock/products"
-import Item from "./Item"
+import { products } from "../../Mock/products"
+import ItemCard from "./ItemCard";
 
 export default function ItemListContainer() {
     const { id } = useParams()
@@ -30,9 +30,9 @@ export default function ItemListContainer() {
    
     return (
         <>
-            <main className="min-h-[80vh] flex flex-col items-center text-dark-mh py-10">
+            <main className="min-h-[86vh] flex flex-col items-center font-poppins text-dark-mh py-10">
                 <div className="w-4/5 flex justify-center flex-wrap pt-10 gap-10">
-                    {productsList.map(product => <Item key={product.id} product={product} />)}
+                    {productsList.map(product => <ItemCard key={product.id} product={product} />)}
                 </div>
             </main>
         </>

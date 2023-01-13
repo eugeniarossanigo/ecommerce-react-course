@@ -1,6 +1,6 @@
 import { Link as Linkrouter} from "react-router-dom"
 
-export default function Item({product}) {
+export default function ItemCard({product}) {
 
     return (
         <>
